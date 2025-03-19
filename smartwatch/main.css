@@ -1,1 +1,22 @@
+:root {
+    --default-color: #01010D;
+}
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    color: var(--default-color);
+    font-family: Poppins, sans-serif;
+}
