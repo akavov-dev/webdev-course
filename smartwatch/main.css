@@ -185,3 +185,47 @@ body {
     align-items: center;
     display: flex;
 }
+
+.feature {
+    padding-top: 95.5px;
+    position: relative;
+    text-align: center;
+}
+
+.feature__title {
+    font-size: 2.55rem;
+    line-height: 1.2;
+}
+
+.feature__text {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    margin-inline: auto;
+    margin-top: 25px;
+    max-width: 433px;
+}
+
+.feature__grid {
+    display: grid;
+    gap: 50px 672px;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(3, 250px);
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.feature__block__title {
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.feature__block__text {
+    font-size: 0.8rem;
+}
+
+.feature-image {
+    left: 50%;
+    position: absolute;
+    top: 43.5%;
+    transform: translateX(-50%);
+}
