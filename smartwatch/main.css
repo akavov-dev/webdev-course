@@ -208,8 +208,7 @@ body {
 .feature__grid {
     display: grid;
     gap: 50px 672px;
-    grid-template-columns: repeat(2, 200px);
-    grid-template-rows: repeat(3, 250px);
+    grid-template: repeat(3, 250px) / repeat(2, 200px);
     justify-content: center;
     margin-top: 80px;
 }
