@@ -146,7 +146,6 @@ body {
 
 .home__description {
     margin-left: 232px;
-    max-width: calc(100% - 870px);
     width: 100%;
 }
 
