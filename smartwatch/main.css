@@ -227,3 +227,153 @@ body {
     top: 43.5%;
     transform: translateX(-50%);
 }
+
+.product {
+    container-type: inline-size;
+    padding-top: 70px;
+}
+
+.product__description {
+    text-align: center;
+}
+
+.product__tagline {
+    align-items: center;
+    color: #1617DB;
+    display: flex;
+    font-size: 0.6rem;
+    gap: 9px;
+    justify-content: center;
+}
+
+.product__title {
+    font-size: 2.55rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+.product__text {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-inline: auto;
+    margin-top: 25px;
+    max-width: 485px;
+}
+
+.product__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px 110px;
+    justify-content: center;
+    margin-top: 80px;
+    padding-inline: 30px;
+}
+
+.product__card {
+    border: 1px solid #CCCCCC;
+    border-radius: 64px;
+    outline: 3px solid #CCCCCC;
+    outline-offset: 2px;
+    overflow: hidden;
+    position: relative;
+    width: 303px;
+}
+
+.watch1 {
+    background-color: #F8D7D9;
+}
+
+.watch2 {
+    background-color: #D6D7DB;
+}
+
+.watch3 {
+    background-color: #DCD2D4;
+}
+
+.product__card-mask {
+    background: #F3F3F5;
+    border-radius: 50%;
+    bottom: -61px;
+    height: 144px;
+    left: -56px;
+    position: absolute;
+    width: 144px;
+}
+
+.product__card-plus {
+    bottom: 30px;
+    left: 30px;
+    position: absolute;
+}
+
+.product__promo {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 100px;
+    justify-content: center;
+    margin-top: 150px;
+    padding-inline: 54px;
+}
+
+.product__promo__description {
+    max-width: 530px;
+    padding-top: 30px;
+}
+
+.product__promo__title {
+    font-size: 2.55rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.product__promo__text {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-top: 25px;
+    max-width: 450px;
+}
+
+.product__promo-button {
+    align-items: center;
+    background: none;
+    border: 1px solid #E5E5E5;
+    border-radius: 6px;
+    color: #1617DB;
+    display: flex;
+    font-family: Poppins, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    gap: 10px;
+    margin-top: 50px;
+    padding: 14px 25px;
+}
+
+.product__promo-button_image {
+    width: 36px;
+}
+
+.product__promo__video_wrapper {
+    align-items: center;
+    background: #5BA199;
+    border-radius: 10px;
+    display: flex;
+    height: 390px;
+    justify-content: center;
+    position: relative;
+}
+
+.product__promo-shadow {
+    background: #1F1818;
+    border-radius: 10px;
+    inset: 0;
+    opacity: 0.6;
+    position: absolute;
+}
+
+.product__promo-video_button {
+    background: none;
+    border: none;
+    position: absolute;
+}
