@@ -377,3 +377,134 @@ body {
     border: none;
     position: absolute;
 }
+
+.testimonial {
+    padding-block: 165px;
+}
+
+.testimonial__wrapper {
+    border-left: 2px dashed #D3CFCF;
+    border-radius: 10px;
+    border-top: 2px dashed #D3CFCF;
+    margin-inline: auto;
+    max-width: 700px;
+    min-height: 254px;
+    padding: 12px 0 0 12px;
+}
+
+.testimonial__block {
+    align-items: center;
+    background: #F4F4F4;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 34px 67.5px;
+}
+
+.testimonial__text {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.testimonial__signature {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 14px;
+    width: 120px;
+}
+
+.testimonial__author {
+    font-family: "PT Sans Narrow";
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.testimonial__company {
+    font-family: "PT Sans Narrow";
+    font-size: 0.7rem;
+    line-height: 1.6;
+}
+
+.horizontal_line {
+    background: var(--default-color);
+    height: 1px;
+    opacity: 0.2;
+    width: 33px;
+}
+
+.testimonial__photo {
+    width: 50px;
+}
+
+.testimonial__quotes {
+    margin-inline: auto;
+}
+
+.footer {
+    background-color: #F7F7F7;
+    padding-bottom: 120px;
+    padding-top: 50px;
+}
+
+.footer__container {
+    display: grid;
+    gap: 135px;
+    grid-template-columns: repeat(5, auto);
+    justify-content: center;
+}
+
+.footer__logo {
+    font-family: Roboto;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.footer__text {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-top: 25px;
+    max-width: 170px;
+}
+
+.footer__title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 28px;
+    margin-top: 20px;
+}
+
+.footer__list {
+    font-size: 0.8rem;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.footer__item {
+    margin-top: 20px;
+}
+
+.footer__link {
+    color: var(--default-color);
+    text-decoration: none;
+}
+
+.footer__input {
+    border: none;
+    border-radius: 6px;
+    font-family: Roboto;
+    font-size: 0.6rem;
+    height: 36px;
+    line-height: 1.3;
+    margin-top: 30px;
+    padding-left: 18px;
+    max-width: 164px;
+}
