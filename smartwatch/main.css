@@ -392,6 +392,7 @@ body {
 
 .testimonial {
     padding-block: 165px;
+    padding-inline: 20px;
 }
 
 .testimonial__wrapper {
@@ -618,11 +619,25 @@ body {
     .product__promo-video_button {
         width: 100%;
     }
+
+    .testimonial__block {
+        padding-inline: 20px;
+    }
+}
+
+@media screen and (width < 512px) {
+    .testimonial__photo {
+        margin-right: 30px;
+    }
 }
 
 @media screen and (width < 392px) {
     .product__cards {
         padding-inline: 0;
+    }
+
+    .testimonial__quotes {
+        margin-top: 25px;
     }
 }
 
