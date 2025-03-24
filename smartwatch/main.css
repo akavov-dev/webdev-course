@@ -198,6 +198,7 @@ body {
 }
 
 .feature {
+    container-type: inline-size;
     padding-top: 95.5px;
     position: relative;
     text-align: center;
@@ -556,6 +557,18 @@ body {
     }
 }
 
+@media screen and (width < 1280px) {
+    .feature__grid {
+        gap: 50px 15%;
+    }
+
+    .feature-image {
+        margin-top: 70px;
+        position: static;
+        transform: none;
+    }
+}
+
 @media screen and (width < 874px) {
     .home__image-img {
         width: 100%;
@@ -577,5 +590,15 @@ body {
 
     .home {
         height: 850px;
+    }
+}
+
+@container (width < 512px) {
+    .feature__grid {
+        grid-template: repeat(6, 250px) / repeat(1, 200px);
+    }
+
+    .feature-image {
+        width: 83.203125%;
     }
 }
