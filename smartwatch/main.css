@@ -391,8 +391,7 @@ body {
 }
 
 .testimonial {
-    padding-block: 165px;
-    padding-inline: 20px;
+    padding: 165px 20px;
 }
 
 .testimonial__wrapper {
