@@ -578,11 +578,20 @@ body {
         justify-content: center;
         text-align: center;
     }
+
+    .footer__container {
+        gap: 50px;
+    }
 }
 
 @media screen and (width < 874px) {
     .home__image-img {
         width: 100%;
+    }
+
+    .footer__container {
+        gap: 30px;
+        grid-template-columns: repeat(3, auto);
     }
 }
 
@@ -628,6 +637,11 @@ body {
     .testimonial__photo {
         margin-right: 30px;
     }
+
+    .footer__container {
+        gap: 50px;
+        grid-template-columns: repeat(2, auto);
+    }
 }
 
 @media screen and (width < 392px) {
@@ -637,6 +651,12 @@ body {
 
     .testimonial__quotes {
         margin-top: 25px;
+    }
+}
+
+@media screen and (width < 360px) {
+    .footer__container {
+        grid-template: auto / auto;
     }
 }
 
