@@ -567,6 +567,18 @@ body {
         position: static;
         transform: none;
     }
+
+    .product__promo {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .product__promo__description {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 @media screen and (width < 874px) {
@@ -590,6 +602,28 @@ body {
 
     .home {
         height: 850px;
+    }
+
+    .product__promo {
+        padding-inline: 10px;
+    }
+
+    .product__promo__video_wrapper {
+        height: auto;
+    }
+
+    .product__promo-video {
+        width: 100%;
+    }
+
+    .product__promo-video_button {
+        width: 100%;
+    }
+}
+
+@media screen and (width < 392px) {
+    .product__cards {
+        padding-inline: 0;
     }
 }
 
