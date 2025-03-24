@@ -521,6 +521,47 @@ body {
     max-width: 164px;
 }
 
+@media screen and (width < 1515px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home__description {
+        margin-inline: auto;
+        margin-top: 10px;
+        max-width: 1300px;
+        padding-inline: 40px;
+        width: auto;
+    }
+
+    .home__content {
+        margin-left: 0;
+        margin-top: 0;
+        max-width: none;
+        width: 100%;
+    }
+
+    .home__title {
+        font-size: 2.55rem;
+    }
+
+    .home__buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home__image {
+        justify-content: center;
+    }
+}
+
+@media screen and (width < 874px) {
+    .home__image-img {
+        width: 100%;
+    }
+}
+
 @media screen and (width < 768px) {
     .header {
         height: 50px;
@@ -532,5 +573,9 @@ body {
 
     .menu {
         display: none;
+    }
+
+    .home {
+        height: 850px;
     }
 }
