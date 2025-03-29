@@ -22,14 +22,13 @@ Dreamer, altruist, builder of tools for humans.
 ## Hard Skills
 
 * **Mathematics:** discrete mathematics, calculus, linear algebra, analytic geometry
-* **Computer Science:** functional programming, object-oriented programming, data structures and algorithms, etc.
-* **Programming Languages:** Scheme, JavaScript, TypeScript, ReScript, bash
-* **Runtimes:** Node.js, Deno, Bun
-* **Libraries:** React, MobX, RxJS, Three.js, etc.
-* **Frameworks:** Tailwind CSS, Next.js, React Native, Electron, Fastify, etc.
-* **APIs:** Canvas, WebGL, WebGPU, etc.
-* **Tools:** WebStorm, Vite, Docker, PageSpeed Insights, etc.
-* **Testing:** Vitest, Playwright
+* **Computer Science:** object-oriented programming, functional programming, data structures and algorithms, etc.
+* **Programming Languages:** C#, TypeScript, bash
+* **Frameworks:** ASP.NET Core, Vue.js, Tailwind CSS, etc.
+* **Tools:** Rider, WebStorm, Vite, Docker, PageSpeed Insights, etc.
+* **Testing:** xUnit, Vitest, Playwright
+* **Databases:** PostgreSQL, Redis
+* **ORMs:** Entity Framework, Dapper
 
 ## Projects
 
