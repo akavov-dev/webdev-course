@@ -1,0 +1,278 @@
+:root {
+    --default-color: #01010D;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    background: url('./images/hand.svg') no-repeat fixed,
+                url('./images/background.svg') top / cover no-repeat fixed;
+    color: var(--default-color);
+    font-family: Poppins, sans-serif;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.header::after {
+    background: #1617DB;
+    bottom: 0;
+    content: '';
+    height: 1px;
+    left: calc((100% - 70.875%) / 2);
+    opacity: 0.05;
+    position: absolute;
+    width: 70.875%;
+}
+
+.header__menu_button {
+    background: none;
+    border: none;
+    display: none;
+    font-size: 1.2rem;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+}
+
+.menu {
+    height: 100%;
+}
+
+.menu__list {
+    align-items: center;
+    display: flex;
+    gap: 60px;
+    height: 100%;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.menu__item {
+    align-items: center;
+    display: flex;
+    height: 100%;        
+    position: relative;
+}
+
+.menu__link {
+    color: var(--default-color);
+    font-family: Roboto, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.35;
+    text-decoration: none;
+}
+
+.menu__link::before {
+    content: attr(data-text);
+    display: block;
+    font-weight: 700;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.menu__link::after {
+    background: #1617DB;
+    border-radius: 4px;
+    bottom: 0;
+    content: '';
+    height: 4px;
+    left: 5%;
+    position: absolute;
+    transition: width 0.4s ease;
+    width: 0;
+}
+
+.menu__link:hover {
+    font-weight: 700;
+}
+
+.menu__link:hover::after {
+    width: 90%;
+}
+
+.main {
+    padding-block: 50px;
+}
+
+.main__title {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px 110px;
+    justify-content: center;
+    margin-top: 80px;
+    padding-inline: 30px;
+}
+
+.brand_name {
+    text-align: center;
+}
+
+.smartwatch {
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 64px;
+    outline: 3px solid #CCCCCC;
+    outline-offset: 2px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.smartwatch_image {
+    width: 300px;
+}
+
+.mask {
+    background: #F3F3F5;
+    border-radius: 50%;
+    bottom: -60px;
+    height: 144px;
+    left: -70px;
+    position: absolute;
+    width: 144px;
+}
+
+.plus {
+    bottom: 30px;
+    left: 25px;
+    position: absolute;
+}
+
+.footer {
+    background-color: #F7F7F7;
+    padding-bottom: 120px;
+    padding-top: 50px;
+}
+
+.footer__container {
+    display: grid;
+    gap: 135px;
+    grid-template-columns: repeat(5, auto);
+    justify-content: center;
+}
+
+.footer__logo {
+    font-family: Roboto;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.footer__text {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-top: 25px;
+    max-width: 170px;
+}
+
+.footer__title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 28px;
+    margin-top: 20px;
+}
+
+.footer__list {
+    font-size: 0.8rem;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.footer__item {
+    margin-top: 20px;
+}
+
+.footer__link {
+    color: var(--default-color);
+    text-decoration: none;
+}
+
+.footer__input {
+    border: none;
+    border-radius: 6px;
+    font-family: Roboto;
+    font-size: 0.6rem;
+    height: 36px;
+    line-height: 1.3;
+    margin-top: 30px;
+    padding-left: 18px;
+    max-width: 164px;
+}
+
+@media screen and (width < 1280px) {
+    .footer__container {
+        gap: 50px;
+    }
+}
+
+@media screen and (width < 874px) {
+    .footer__container {
+        gap: 30px;
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media screen and (width < 768px) {
+    .header {
+        height: 50px;
+    }
+
+    .header__menu_button {
+        display: inline-block;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media screen and (width < 512px) {
+    .footer__container {
+        gap: 50px;
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (width < 392px) {
+    .catalog {
+        padding-inline: 0;
+    }
+}
+
+@media screen and (width < 360px) {
+    .footer__container {
+        grid-template: auto / auto;
+    }
+}
