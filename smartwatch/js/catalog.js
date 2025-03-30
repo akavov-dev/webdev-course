@@ -42,6 +42,13 @@ function generateSmartwatches(number, brands) {
 }
 
 function renderCatalog(catalog, smartwatches) {
+    if (smartwatches.length === 0) {
+        catalog.innerHTML = "<p>No smartwatches found</p>";
+        return;
+    }
+    
+    catalog.innerHTML = "";
+    
     smartwatches.forEach(smartwatch => {
         const smartwatchElement = document.createElement("article");
     
