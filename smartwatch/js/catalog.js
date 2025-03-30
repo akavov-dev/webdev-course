@@ -1,6 +1,21 @@
-const getRandomItem = array => array[Math.floor(Math.random(0, 1) * array.length)];
+const number = 15;
+const brands = [
+    "TechWear",
+    "Garmin",
+    "Samsung",
+    "Apple",
+    "Xiaomi",
+];
 
-const generateSmartwatches = (number, brands) => {
+const smartwatches = generateSmartwatches(number, brands);
+const catalog = document.querySelector(".catalog");
+renderCatalog(catalog, smartwatches);
+
+function getRandomItem(array) {
+    return array[Math.floor(Math.random(0, 1) * array.length)]
+}
+
+function generateSmartwatches(number, brands) {
     const smartwatches = [];
 
     for (let i = 0; i < number; i++) {
@@ -26,32 +41,21 @@ const generateSmartwatches = (number, brands) => {
     return smartwatches;
 }
 
-const number = 15;
-const brands = [
-    "TechWear",
-    "Garmin",
-    "Samsung",
-    "Apple",
-    "Xiaomi",
-];
-
-const smartwatches = generateSmartwatches(number, brands);
-
-const catalog = document.querySelector(".catalog");
-
-smartwatches.forEach(smartwatch => {
-    const smartwatchElement = document.createElement("article");
-
-    smartwatchElement.className = "smartwatch";
-    smartwatchElement.innerHTML = `
-        <img class="smartwatch_image" src="${smartwatch.image}" alt="${smartwatch.name}">
-        <span class="mask"></span>
-        <img class="plus" src="./images/plus.svg" alt="Plus">
-        <h3 class="brand_name">${smartwatch.brand} ${smartwatch.name}</h3>
-        <div class="price">$${smartwatch.price}</div>
-        <div class="rating">${smartwatch.rating}/5</div>
-        <div class="availability">${smartwatch.isAvailable ? "A" : "Not a"}vailable</div>
-    `;
-
-    catalog.append(smartwatchElement);
-});
+function renderCatalog(catalog, smartwatches) {
+    smartwatches.forEach(smartwatch => {
+        const smartwatchElement = document.createElement("article");
+    
+        smartwatchElement.className = "smartwatch";
+        smartwatchElement.innerHTML = `
+            <img class="smartwatch_image" src="${smartwatch.image}" alt="${smartwatch.name}">
+            <span class="mask"></span>
+            <img class="plus" src="./images/plus.svg" alt="Plus">
+            <h3 class="brand_name">${smartwatch.brand} ${smartwatch.name}</h3>
+            <div class="price">$${smartwatch.price}</div>
+            <div class="rating">${smartwatch.rating}/5</div>
+            <div class="availability">${smartwatch.isAvailable ? "A" : "Not a"}vailable</div>
+        `;
+    
+        catalog.append(smartwatchElement);
+    });
+}
