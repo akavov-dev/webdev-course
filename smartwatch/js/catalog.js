@@ -57,10 +57,10 @@ function renderCatalog(catalog, smartwatches) {
             <img class="smartwatch_image" src="${smartwatch.image}" alt="${smartwatch.brand} ${smartwatch.model}">
             <span class="mask"></span>
             <img class="plus" src="./images/plus.svg" alt="Plus">
-            <h3 class="name">${smartwatch.brand} ${smartwatch.model}</h3>
-            <div class="price">$${smartwatch.price}</div>
-            <div class="rating">${smartwatch.rating}/5</div>
-            <div class="availability">${smartwatch.isAvailable ? "A" : "Not a"}vailable</div>
+            <h3 class="smartwatch_name">${smartwatch.brand} ${smartwatch.model}</h3>
+            <div class="smartwatch_price">$${smartwatch.price}</div>
+            <div class="smartwatch_rating">${smartwatch.rating}/5</div>
+            <div class="smartwatch_availability">${smartwatch.isAvailable ? "A" : "Not a"}vailable</div>
         `;
     
         catalog.append(smartwatchElement);
