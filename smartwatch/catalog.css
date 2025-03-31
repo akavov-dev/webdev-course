@@ -130,10 +130,6 @@ body {
     padding-inline: 30px;
 }
 
-.brand_name {
-    text-align: center;
-}
-
 .smartwatch {
     background: #FFFFFF;
     border: 1px solid #CCCCCC;
@@ -147,6 +143,10 @@ body {
 
 .smartwatch_image {
     width: 300px;
+}
+
+.smartwatch_name {
+    text-align: center;
 }
 
 .mask {
