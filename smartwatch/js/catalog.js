@@ -20,7 +20,7 @@ function generateSmartwatches(number, brands) {
 
     for (let i = 0; i < number; i++) {
         const image = `./images/smartwatches/smartwatch_${i + 1}.jpg`;
-        const name = `Model ${i + 1}`;
+        const model = `Model ${i + 1}`;
         const brand = getRandomItem(brands);
         const price = Math.floor(Math.random() * 100 + 50);
         const rating = (Math.random() * 2 + 3).toFixed(1);
@@ -28,7 +28,7 @@ function generateSmartwatches(number, brands) {
 
         const smartwatch = {
             image,
-            name,
+            model,
             brand,
             price,
             rating,
@@ -54,10 +54,10 @@ function renderCatalog(catalog, smartwatches) {
     
         smartwatchElement.className = "smartwatch";
         smartwatchElement.innerHTML = `
-            <img class="smartwatch_image" src="${smartwatch.image}" alt="${smartwatch.name}">
+            <img class="smartwatch_image" src="${smartwatch.image}" alt="${smartwatch.brand} ${smartwatch.model}">
             <span class="mask"></span>
             <img class="plus" src="./images/plus.svg" alt="Plus">
-            <h3 class="brand_name">${smartwatch.brand} ${smartwatch.name}</h3>
+            <h3 class="name">${smartwatch.brand} ${smartwatch.model}</h3>
             <div class="price">$${smartwatch.price}</div>
             <div class="rating">${smartwatch.rating}/5</div>
             <div class="availability">${smartwatch.isAvailable ? "A" : "Not a"}vailable</div>
