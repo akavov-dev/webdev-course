@@ -23,7 +23,55 @@
     </header>
     <main class="main">
         <h1 class="main__title">Buy Our Smartwatches</h1>
-        <div class="catalog"></div>
+        <div class="container">
+            <div class="controls">
+                <div class="buttons">
+                    <button class="button available">Available</button>
+                    <button class="button navailable">Not available</button>
+                    <button class="button sbpa">Sort by Price (Asc.)</button>
+                    <button class="button sbpd">Sort by Price (Desc.)</button>
+                    <button class="button sbra">Sort by Rating (Asc.)</button>
+                    <button class="button sbrd">Sort by Rating (Desc.)</button>
+                    <button class="button sbna">Sort by Name (Asc.)</button>
+                    <button class="button sbnd">Sort by Name (Desc.)</button>
+                    <button class="button discount">Apply 20% discount</button>
+                    <button class="button initial">Show initial catalog</button>
+                </div>
+                <form class="search">
+                    <label for="smartwatch">Find by Name
+                        <input class="search_input" type="search" id="smartwatch">
+                    </label>
+                </form>
+                <form class="sort">
+                    <label for="sort-select"></label>
+                    <select class="sort_select" name="sort" id="sort-select">
+                        <option value="">-- Sort --</option>
+                        <option value="price">Price</option>
+                        <option value="name">Name</option>
+                        <option value="rating">Rating</option>
+                    </select>
+                </form>
+                <form class="price_category">
+                    <div>Price Category</div>
+                    <label for="price-from">
+                        From
+                        <input class="price_category-input" type="number" id="price-from">
+                    </label>
+                    <label for="price-to">
+                        to
+                        <input class="price_category-input" type="number" id="price-to">
+                    </label>
+                </form>
+                <form class="brand_category">
+                    <div>Brand Category</div>
+                    <label for="brand-select"></label>
+                    <select class="brand_select" name="brand" id="brand-select">
+                        <option value="">-- Brand --</option>
+                    </select>
+                </form>
+            </div>
+            <div class="catalog"></div>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer__container">
