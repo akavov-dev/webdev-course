@@ -23,6 +23,18 @@ body {
     font-family: Poppins, sans-serif;
 }
 
+.button {
+    background: #1617DB;
+    border: none;
+    border-radius: 6px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 0.8rem;
+    height: 50px;
+    padding-inline: 10px;
+    width: 164px;
+}
+
 .header {
     align-items: center;
     display: flex;
@@ -121,12 +133,84 @@ body {
     text-align: center;
 }
 
+.container {
+    display: grid;
+    grid-template: auto / 300px auto;
+    margin-top: 80px;
+}
+
+.controls {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.search {
+    text-align: center;
+}
+
+.search_input {
+    border: 2px solid #AAA;
+    border-radius: 6px;
+    font-family: Roboto;
+    font-size: 0.7rem;
+    height: 36px;
+    line-height: 1.3;
+    max-width: 164px;
+    padding-left: 18px;
+    transition: 0.4s;
+}
+
+.search_input:hover,
+.search_input:focus {
+    background: #EEE;
+}
+
+.sort_select, .brand_select {
+    border: 2px solid #AAA;
+    border-radius: 6px;
+    width: 164px;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+.price_category {
+    text-align: center;
+}
+
+.price_category-input {
+    border: 2px solid #AAA;
+    border-radius: 6px;
+    font-family: Roboto;
+    font-size: 0.7rem;
+    height: 36px;
+    line-height: 1.3;
+    max-width: 80px;
+    padding-left: 18px;
+    transition: 0.4s;
+}
+  
+.sort_select:hover,
+.sort_select:focus,
+.price_category-input:hover,
+.price_category-input:focus {
+    background: #EEE;
+}
+
 .catalog {
+    align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
     gap: 100px 110px;
     justify-content: center;
-    margin-top: 80px;
     padding-inline: 30px;
 }
 
